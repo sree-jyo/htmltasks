@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    <fieldset><Center>
+        <img src="./bus.png" width="80" height="80"   alt="logo">
+        <h1>TELANGANA STATE ROAD TRANSPORT CORPORATION </h1>
+    <br>
+   <b>GENERAL BUS PASS APPLICTION</b>
+</Center>
+</fieldset>
+<fieldset>
+    <legend><b>Application details</b></legend>
+    <label for="name">Name*</label>                              
+    <input type="text" id="name" name="name" required maxlength="20" autocomplete="off" title="maximum 20 charecters:">   
+    <label for="Father's Name/Guardian's">Father's /Guardian's Name*</label>   
+    <input type="text" id="Father's /Guardian's Name" name="Father's /Guardian's Name" required>
+    <label for="dob">Date of Birth*(dd/mm/yyyy)</label>
+   <input type="text" required  name="dob" id="dob" pattern="\d{2}/\d{2}/\d{4}" placeholder="dd/mm/yyyy">
+   <label for="Gender">Gender*</label>
+   <input type="radio" name="gender" id="Female"value="Female" required>
+    <label for="Female">Female</label>
+   <input type="radio" name="gender" id="male" value="male" required>
+   <label for="male">Male</label>
+   <br><br>
+<label for="age">Age As on:</label>
+<input type="checkbox">Year(s) <input type="checkbox">Month(s)   <input type="checkbox">Days(s)
+<label for="adhaar">Adhaar Number*</label>
+<input type="text" name="Adhaar" id="adhaar" placeholder="XXXX XXXX XXXX " pattern="\d{12}" required>
+<label for="whatsApp">whatsApp*</label>
+<input type="text" name="whatsApp" id="whatsApp" placeholder="XXXXXXXXXX " pattern="\d{10}" required>
+<label for="Email">E-mail Id*</label>
+<input type="text" name="Email" id="Email" placeholder="enter your email id" pattern="[a-zA-z0-9]!@#$%^&*." required><br>
+<label for="password">Password*</label>
+<input type="text" name="password" id="password" placeholder="enter your password" pattern="(?=.[a-z])(?=.[A-Z])(?=.[0-9])(?=.[!@#$%^&]).{8,16}" required>
+<br><br>
+<label for="photo">Photo*</label>
+<input type="file" accept="image">
+</fieldset>
+<fieldset>
+ <legend><b>Residential Address Details</b></legend>
+ <label for="Applicant's Address">Applicant's Address*</label>
+<textarea name="Applicant's Address" id="Applicant's Address" maxlength="80" minlength="10"></textarea>
+<label for="district">District*</label>
+<select name="district" id="District" required>
+    <option value="">Select</option>
+    <option value="HYDERABAD">HYDERABAD</option>
+</select>
+<label for="MANDAL">Mandal*</label>
+<select name="mandal" id="mandal" required>
+    <option value="">Select</option>
+    <option value="HYDERABAD">HYDERABAD</option>
+</select>
+<label for="village">Village*</label>
+<select name="village" id="village" required>
+    <option value="">Select</option>
+    <option value="HYDERABAD">HYDERABAD</option>
+    </select>
+    <label for="pincode">pincode*</label>
+<input type="text" id="pincode" name="pincode" pattern="\d{6}" placeholder="6-digit pincode" required>
+</fieldset>
+<fieldset>
+    <legend><b>Pass Type Details</b></legend>
+    <label for="City">City*</label>
+<select name="City" id="City" required>
+    <option value="">Select</option>
+    <option value="HYDERABAD">HYDERABAD</option>
+</select>
+<label for="passtype">Pass Type*</label>
+<select name="passtype" id="passtype" required>
+    <option value="">.....Select.....</option>
+    <option value="GREATER PASS">GREATER PASS</option>
+    <option value="GENERAL ORDINARY ROUTE PASS MTLY">GENERAL ORDINARY ROUTE PASS MTLY</option>
+    <option value="GENERAL METRO EXPRESS ROUTE PASS MTLY">GENERAL METRO EXPRESS ROUTE PASS MTLY</option>
+    <option value="ORDINARY PASS">ORDINARY PASS</option>
+    <option value="METRO DELUX PASS">METRO DELUX PASS</option>
+    <option value="METRO …
